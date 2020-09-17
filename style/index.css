@@ -8,6 +8,7 @@
     border-radius: 15px;
     margin:20px ;
     outline: none;
+    padding: 5px;
 }
 .borderBox{
     padding:10px;
@@ -21,7 +22,7 @@
 .mail{
     position: absolute;
     left: 58px;
-    top: 132px;
+    top: 90px;
 }
 .user{
     position: absolute;
@@ -31,5 +32,20 @@
 .pwd{
     position: absolute;
     left: 420px;
-    top: 178px;
+    top: 138px;
+}
+.mails{
+    position: absolute;
+    left: 58px;
+    top: 70px;
+}
+.users{
+    position: absolute;
+    left: 58px;
+    top: 25px;
+}
+.pwds{
+    position: absolute;
+    left: 420px;
+    top: 115px;
 }
