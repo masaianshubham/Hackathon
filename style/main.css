@@ -1,0 +1,30 @@
+#navbar{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#navItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navItem a{
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#navItem a:hover{
+    color: rgb(204, 204, 204);
+    opacity: 0.8;
+}
+
+.card{
+    background: rgb(204, 204, 204)
+}
