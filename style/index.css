@@ -1,0 +1,35 @@
+.inputBox{
+    width: 400px;
+    border-radius: 15px;
+    padding: 4px 4px 4px 30px;
+    outline: none;
+}
+.buttonBox{
+    border-radius: 15px;
+    margin:20px ;
+    outline: none;
+}
+.borderBox{
+    padding:10px;
+    margin-top:70px;
+    width: 500px;
+    border:1px solid black;
+    margin-left: 300px;
+    box-shadow: 5px 2px 4px 10px;
+    background: whitesmoke;
+}
+.mail{
+    position: absolute;
+    left: 58px;
+    top: 132px;
+}
+.user{
+    position: absolute;
+    left: 58px;
+    top: 90px;
+}
+.pwd{
+    position: absolute;
+    left: 420px;
+    top: 178px;
+}
