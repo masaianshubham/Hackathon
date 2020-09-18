@@ -16,18 +16,18 @@
 
             <div >
                 <label>
-                    <input type="email" placeholder="something@domain.com" class="inputBox">
+                    <input type="email" placeholder="something@domain.com" value="User" class="inputBox">
                     <span><i class="fas fa-envelope-open mail"></i></span>
                 </label>
             </div>
             <div>
                 <label>
-                    <input type="password" placeholder="Enter 8 valid characters" class="inputBox" />
+                    <input type="password" placeholder="Enter 8 valid characters" value="admin" class="inputBox" />
                         <span><i class="fas fa-eye pwd"></i></span> 
                 </label>
             </div>
             <div >
-                <button class="buttonBox" >LOGIN TO ACCOUNT</button>
+                <button class="buttonBox" id="loggedIn">LOGIN TO ACCOUNT</button>
             </div>
             <div>
                 <p>Dont , have an account? <a href="#" data-toggle="modal" data-target="#exampleModal">Sign up</a></p>
@@ -78,5 +78,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    let btn = document.getElementById("loggedIn")
+    btn.addEventListener("click", ()=>{
+        window.location.href = "home.html"
+    })
+    </script>
 </body>
 </html>
