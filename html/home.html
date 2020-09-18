@@ -9,22 +9,43 @@
     <title>Landing Page</title>
 </head>
 <body>
-    <div class="container-fluid bg-dark ">
+    <div class="container-fluid " style="background: #795548;">
         <div class="row ">
             <div class="col-12" id="navbar">
                 <div class="col-5">
-                    <h2 class="text-light font-italic font-weight-bold">The Decipher</h2>
+                    <h2 class="text-light  font-weight-bold">The Decipher</h2>
                 </div>
                 <div class="col-7" id="navItem">
                     <a href="">Home</a>
                     <a href="#event">Events</a>
                     <a href="#about">About</a>
                     <a href="#contact">Contact</a>
+                    <a href="#" style="font-size:30px; border: 3px solid white; border-radius: 50%;padding: 8px;" data-toggle="modal" data-target="#adminlogin">
+                      <i class="fas fa-user-lock"></i></a>
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="adminlogin" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="adminloginLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="adminloginLabel">Enter Admin Password</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <input type="password" placeholder="Enter the password">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Sign in</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row ">
-            <div class="col-12 bg-dark " style="margin-top: 88px;" >
+            <div class="col-13" style="margin-top: 88px; background: #795548; ">
                 <div id="demo" class="carousel slide" data-ride="carousel" >
 
                     <!-- Indicators -->
@@ -69,7 +90,7 @@
         </div>
         <div class="row py-5" id="event">
             <div class="col-12 text-center text-light pb-5">
-                <h2 style="letter-spacing: 3px;">Events</h2>
+                <h2 style="letter-spacing: 3px;" class="text-light">Events</h2>
             </div>
             <div class="col-4">
                 <div class="card h-100">
@@ -83,7 +104,7 @@
                       
                     </div>
                     <div class="card-footer text-center border-0">
-                      <a  class="btn btn-primary" id="fashion" data-toggle="modal" data-target="#exampleModal">Get Quotation</a>
+                      <a  class="btn btn-lg" id="fashion" data-toggle="modal" style="border:2px solid #795548;font-weight: bold;"       data-target="#2">Get Quotation</a>
                     </div>
                   </div>
             </div>
@@ -120,7 +141,7 @@
                       
                     </div>
                     <div class="card-footer text-center border-0">
-                      <a id="wedding" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Get Quotation</a>
+                      <a id="wedding" class="btn btn-lg " style="border:2px solid #795548;font-weight: bold;"  data-toggle="modal" data-target="#exampleModal">Get Quotation</a>
                     </div>
                   </div>
             </div>
@@ -135,70 +156,64 @@
                       </p>
                     </div>
                     <div class="card-footer text-center border-0">
-                      <a id="music" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Get Quotation</a>
+                      <a id="music" class="btn btn-lg" style="border:2px solid #795548;font-weight: bold;" data-toggle="modal" data-target="#exampleModal">Get Quotation</a>
                     </div>
                   </div>
             </div>
         </div>
         <div class="container py-5">
             <div class="row" id="about">
-                <div class="col-12 text-center">
-                    <h2>About Us</h2>
-                    <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eveniet rem ratione ipsum, exercitationem suscipit est delectus quae. Autem, enim. Eligendi accusantium sint unde quo delectus deserunt eos, iure animi! Ipsa dolorum a rerum recusandae odio quae veritatis, minima vel minus harum laudantium omnis voluptate optio iusto culpa laborum nobis officia. Quidem, beatae cupiditate illum saepe quis ad aspernatur, excepturi fuga, a perferendis perspiciatis voluptatem corporis! Esse assumenda corrupti, necessitatibus ipsum inventore voluptates corporis mollitia voluptatum est enim debitis labore aspernatur unde repellendus. Vel voluptate totam numquam similique qui pariatur nostrum magni corrupti iusto veniam incidunt voluptatibus deleniti dolore ut, placeat recusandae perferendis tenetur, explicabo exercitationem impedit distinctio? Sed omnis aspernatur fuga ut a quasi, aliquid, vitae doloremque quisquam id qui illum labore, placeat aut ab. Ut debitis illo exercitationem corrupti eum laborum inventore, temporibus non quos placeat aperiam perspiciatis fugiat porro dolor odit quae ducimus maiores quo ratione possimus.</p>
+                <div class="col-6 text-center">
+                    <h2>What we do ? </h2>
+                    <p class="mt-4">
+                      Our core purpose is to create customer experience , and to bring prosperity for the 
+                      entire ecosystem connected with us.The success of our site is a result of the team
+                      working tirelessly to ensure that every component of the event unravels exactly as planned.
+                      The many nuances of event the kind of arrangements that needs to be made. 
+                      We follow three straightforward rules : <br>
+                      1)  Always be prepared <br>
+                      2) Think out of box -it isn't an option, it's the norm  <br>
+                      3) Great attention to details
+                    </p>
                 </div>
+                <div class="col-6" >
+                  <div class="card border-0">
+                      <img src="https://workthatworks.org/wp-content/uploads/2019/03/workthatwork_blog_type_event.jpg" style="height: 400px;border-radius: 50%;" class="card-img-top" alt="...">
+                      </div>
+                    </div>
+              </div>
             </div>
         </div>
-        <div class="row bg-light py-3" id="contact">
+        <div class="row bg-light py-3 " id="contact">
             <h3 class="col-12 text-center">Contact Us</h3>
-            <div class="col-6 p-4">
-                <form>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
+            <div class="text-center" style="padding-left: 400px;">
+              <div class="col-12 " >
+                <form class="p-2">
+                    <div class="form-row ml-5 " >
+                      <div class="form-group col-md-7 ">
                         <label for="inputEmail4">Email</label>
                         <input type="email" class="form-control" id="inputEmail4">
                       </div>
-                      <div class="form-group col-md-6">
-                        <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4">
+                      <div class="form-group col-md-7">
+                        <label for="inputPassword4">Message Us?</label>
+                        <input type="text" class="form-control" id="inputPassword4">
                       </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="inputAddress">Address</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <div class="form-group">
-                      <label for="inputAddress2">Address 2</label>
-                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
+                      <div class="form-group col-md-7 ">
+                        <label for="inputEmail4">Phone Number</label>
+                        <input type="phone" class="form-control" id="inputEmail4">
                       </div>
-                      <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
-                          <option selected>Choose...</option>
-                          <option>...</option>
-                        </select>
+                      <div class="form-group col-md-7 text-center">
+                        <button type="submit" class="btn btn-lg" style="border:2px solid #795548;font-weight: bold;">Contact Us</button>
                       </div>
-                      <div class="form-group col-md-2">
-                        <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                      </div>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">Contact Us</button>
-                  </form>
-            </div>
-            <div class="col-6">
-                <div class="card border-0">
-                    <img src="https://workthatworks.org/wp-content/uploads/2019/03/workthatwork_blog_type_event.jpg" style="height: 400px" class="card-img-top" alt="...">
                     </div>
                   </div>
+                </form>
+              </div>
             </div>
+          
+           
         </div>
-        <footer>
+        <footer style="background: #795548; ">
             <i class="fab fa-facebook-f"></i>
             <i class="fab fa-twitter"></i>
             <i class="fab fa-youtube"></i>
